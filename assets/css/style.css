@@ -1,0 +1,47 @@
+header
+{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+}
+
+body
+{
+    background-image: url(../images/PageCorner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: center; */
+    text-align: center;
+}
+
+.container
+{
+    background-image: url(../images/food.png);
+}
+#main-content div
+{
+    /* border: 1px solid black;   */
+}
+
+#timer-row
+{
+    padding: 2%;
+}
+#guess-img
+{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+#answer-gif
+{
+    /* position: relative; */
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+.btn:focus{
+    box-shadow: none !important;
+    }
