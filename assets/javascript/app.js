@@ -120,7 +120,11 @@ $(document).ready(function () {
 
     // Updating Random Question
     function updateRandomQuestion() {
+
+        // Empty the images so image is loaded after the question 
         $("#answer-gif").attr("src", "");
+        $("#guess-img").attr("src", "");
+        
         // If Copied array has elements 
         if (availableDetails.length > 0) {
 
