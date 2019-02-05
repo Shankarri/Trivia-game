@@ -204,6 +204,7 @@ $(document).ready(function () {
     function displayAnswer(ChoiceAnswer)
     {
         // if time is run out, update the message and add one to unanswered 
+        $("#answer-gif").attr("src", currentQuestion.gif);
         if (time <= 0)
         {
             unAnswered++;
@@ -224,7 +225,6 @@ $(document).ready(function () {
         }
     
         // show answer Gif 
-        $("#answer-gif").attr("src", currentQuestion.gif);
         $("#answer-col").show();
 
         // clear timer so it starts as fresh
