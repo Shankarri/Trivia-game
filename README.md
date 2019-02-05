@@ -4,7 +4,7 @@ This Trivia Game is based on the English Series F.R.I.E.N.D.S.
 
 ## Rules for the game
 
-1. Start the game by clicking on the Start button 
+1. Start the game by clicking on the "Start Game" button 
 
 2. For each question, you have to select one correct answer from the 4 available choices.
 
@@ -18,8 +18,8 @@ This Trivia Game is based on the English Series F.R.I.E.N.D.S.
 
 7. In all 3 times, answer will be displayed in the right side of the page.
 
-8. After all the questions are done, your score of correct answer, incorrect answer and unanswered will be displayed at the last page.
+8. After all the questions are done, your score for correct answer, incorrect answer and unanswered will be displayed at the last page.
 
-9. You can restart the game and play it again also.
+9. You can restart the game by clicking on "Restart Game" button. 
 
 # Good Luck !
