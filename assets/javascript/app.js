@@ -1,115 +1,82 @@
-/* {
-       question: "The half-giant Hogwarts gamekeeper loves all creatures",
-       answer: "Rubeus Hagrid",
-       quotes: "Harry -- yer a wizard.",
-       picture: "assets/images/Guess_Images/Hagrid.jpg"
-   },
-   {
-       question: "Harry’s devoted pet owl",
-       answer: "Hedwig",
-       quotes: "Tapping at the Window",
-       picture: "assets/images/Guess_Images/Hedwig.jpg"
-   },
-   {
-       question: "The strict but fair Head of Gryffindor house and Transfiguration teacher",
-       answer: "Minerva McGonagall",
-       quotes: "Don’t tell me what I can and can’t do, Potter.",
-       picture: "assets/images/Guess_Images/Mcgonagall.jpg"
-   },
-   {
-       question: "Harry Potter belongs to this House School",
-       answer: "Gryffindor",
-       quotes: "Where dwell the brave at heart,Their daring, nerve, and chivalry,Set them apart",
-       picture: "assets/images/Guess_Images/Gryffindor-Logo.jpg"
-   },
-   {
-       question: "Cedric Diggory belongs to this House School",
-       answer: "Hufflepuff",
-       quotes: "Where they are just and loyal,Those patient who are true",
-       picture: "assets/images/Guess_Images/Hufflepuff-Logo.jpg"
-   },
-   {
-       question: "Luna Lovegood belongs to this House School",
-       answer: "Ravenclaw",
-       quotes: "If you've a ready mind, Where those of wit and learning, Will always find their kind;",
-       picture: "assets/images/Guess_Images/Ravenclaw-Logo.jpg"
-   },
-   {
-       question: "Draco Malfoy belongs to this House School",
-       answer: "Slytherin",
-       quotes: "You'll make your real friends,These cunning folks use any means,To achieve their ends.",
-       picture: "assets/images/Guess_Images/Slytherin.jpg"
-   },
-   {
-       question: "Harry’s School of Witchcraft and Wizardry",
-       answer: "Hogwarts",
-       quotes: "Help will always be given here to those who ask for it.",
-       picture: "assets/images/Guess_Images/Hogwarts.jpg"
-   },
-   {
-       question: "Spell for producing Patronus",
-       answer: "Expecto Patronum",
-       quotes: "This spell is kind of Anti-Dementor – a guardian which acts as a shield between yourself and the Dementor",
-       picture: "assets/images/Guess_Images/patronus.gif"
-   },
-   {
-       question: "Magic parchment that reveals the current location of anyone on Hogwarts grounds",
-       answer: "Marauders Map",
-       quotes: "I solemnly swear I'm upto no good",
-       picture: "assets/images/Guess_Images/Marauders_Map.gif"
-   }, */
-
-
 $(document).ready(function () {
 
+    // Original Trivia Question and answer
     var originalDetails = [
         {
-            id: 1,
-            question: "The boy who lived",
-            choices: ["Ronald Weasley", "Harry Potter", "Draco Malfoy", "Dudley Dursley"],
-            answer: "Harry Potter",
-            quotes: "Sorry, Professor, but I must not tell lies.",
-            picture: "assets/images/guess_images/Harry_Potter.jpg",
-            gif: "assets/images/guess_gifs/HarryPotter_Spell.gif",
+            question: "What is the name of Chandler's father's gay Las Vegas show?",
+            choices: ["VIVA LAS GAYGAS","THE GAY DIARIES", "SATURDAY NIGHT JACKPOT","SUNSET STRIPTEASE"],
+            answer: "VIVA LAS GAYGAS",
+            picture: "assets/images/guess_images/01.Vegas.jpg",
+            gif: "assets/images/answer_images/01.Vegas.gif",
         },
         {
-            id: 2,
-            question: "The cleverest witch of her age",
-            choices: ["Luna Lovegood", "Ginny Weasley", "Hermione Granger", "Molly Weasley"],
-            answer: "Hermione Granger",
-            quotes: "It's leviOsa, not levioSA!",
-            picture: "assets/images/Guess_Images/Hermoine_Granger.jpg",
-            gif: "assets/images/guess_gifs/GinnyWeasly_Spell.gif",
+            question: "What is the name of Phoebe's birth mother?",
+            choices: ["ROSE","PHOEBE","LILY", "DAISY"],
+            answer: "PHOEBE",
+            picture: "assets/images/guess_images/02.Phoebe_Mom.jpg",
+            gif: "assets/images/answer_images/02.Phoebe_Mom.gif",
         },
         {
-            id: 3,
-            question: "Harry's best friend and youngest Weasley son",
-            choices: ["Fred Weasley", "Percy Weasley", "George Weasley", "Ronald Weasley"],
-            answer: "Ronald Weasley",
-            quotes: "'Of all the trees we could’ve hit, we had to get one that hits back.'",
-            picture: "assets/images/Guess_Images/Ronald_Weasley.png",
-            gif: "assets/images/guess_gifs/DracoMalfoy_Spell.gif",
+            question: "What does Rachel gets as a tattoo?",
+            choices: ["HER ZODIAC SIGN","THE LETTER R","A HEART","A RAINBOW"],
+            answer: "A HEART",
+            picture: "assets/images/guess_images/03.Rachael_Tattoo.jpg",
+            gif: "assets/images/answer_images/03.Rachael_Tattoo.jpg",
         },
         {
-            id: 4,
-            question: "Hogwarts Headmaster and founder of the Order of the Phoenix,",
-            choices: ["Albus Dumbledore", "Severus Snape", "Barty Crouch Sr.", "Dolores Umbridge"],
-            answer: "Albus Dumbledore",
-            quotes: "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light",
-            picture: "assets/images/Guess_Images/Albus_Dumbledore.jpg",
-            gif: "assets/images/guess_gifs/Dumbledore_Spell.gif",
+            question: "What did Joey want to wear while performing Monica and Chandler's wedding?",
+            choices: ["A tuxedo","Multi-colored robes","Army Costume","A priest's robe"],
+            answer: "Army Costume",
+            picture: "assets/images/guess_images/04.Joey_dress.jpg",
+            gif: "assets/images/answer_images/04.Joey_dress.gif",
         },
-
         {
-            id: 5,
-            question: "He who must not be Named",
-            choices: ["Harry Potter", "Albus Dumbledore", "Lord Voldemort", "Salazar Slytherin"],
-            answer: "Lord Voldemort",
-            quotes: "There is no good and evil. There is only power, and those too weak to seek it",
-            picture: "assets/images/Guess_Images/Voldemort_2.jpg",
-            gif: "assets/images/guess_gifs/Voldemart_Spell.gif",
+            question: "What is the name of character Joey play as doctor in 'Days of Our Lives'?",
+            choices: ["Ramone Striker", "Drake Ramoray","Bo Horton","Jack Brady"],
+            answer: "Drake Ramoray",
+            picture: "assets/images/guess_images/05.Dr_Joey.gif",
+            gif: "assets/images/answer_images/05.Dr_Joey.gif",
+        },
+        {
+            question: "Joey auditions for a job as a host for a new game show called ?",
+            choices: ["Match Game", "Bamboozled","Pyramid","Cups"],
+            answer: "Bamboozled",
+            picture: "assets/images/guess_images/06.bamboozled.gif",
+            gif: "assets/images/answer_images/06.bamboozled.gif",
+        },
+        {
+            question: "What is the address label printed on Chandler and Joey's TV Guide?",
+            choices: ["Mr Chandler Bing", "Miss Chanadler Bong","Mr Chandler Bong","Miss Chanadler Bing"],
+            answer: "Miss Chanadler Bong",
+            picture: "assets/images/guess_images/07.MissChanadlerBong.gif",
+            gif: "assets/images/answer_images/07.MissChanadlerBong.gif",
+        },
+        {
+            question: " What is the name of Joey's stuffed penguin?",
+            choices: ["Huggy", "Mr. Huggy","Hugsy","Hugger"],
+            answer: "Hugsy",
+            picture: "assets/images/guess_images/08.Joey_Pet.gif",
+            gif: "assets/images/answer_images/08.Joey_Pet.gif",
+        },
+        {
+            question: "What does Phoebe change her name to after marrying Mike Hannigan?",
+            choices: [ "Mrs Phoebe Hannigan-Buffay ","Mrs Phoebe Buffay-Hannigan","Mrs Phoebe Hannigan", "Princess Consuela Bananahammock"],
+            answer: "Princess Consuela Bananahammock",
+            picture: "assets/images/guess_images/09.Phoebe_name.gif",
+            gif: "assets/images/answer_images/09.Phoebe_name.gif",
+        },
+        {
+            question: "What was Joeys choice when played Rock, Paper, Scissors?",
+            choices: [ "Rock ","Paper","Fire", "Scissors"],
+            answer: "Fire",
+            picture: "assets/images/guess_images/10.Joey_fire.gif",
+            gif: "assets/images/answer_images/10.Joey_fire.gif",
         },
     ];
+    
+    // -------------------------------------------------------------------------
+    
+    // Declaring Global variable
     var intervalId;
     var currentQuestion;
     var availableDetails;
@@ -117,37 +84,66 @@ $(document).ready(function () {
     var correctAnswer;
     var inCorrectAnswer;
     var unAnswered;
+    var questionNo = 0;
+    
+    $("#main-content").hide();
+    $("#result-row h5").hide();
 
-    intialize();
+    // -------------------------------------------------------------------------
 
+    // Initialize for the game to start
     function intialize()
     {
+        // create a new array copying the originalDetails Array for data manipulation
         availableDetails = originalDetails.slice();
-        time = 30;
+        time = 60;
         correctAnswer = 0;
         inCorrectAnswer = 0;
         unAnswered = 0;
+        questionNo =0;
         $("#main-content").show();
         $("#result-row").hide();
+
+        // After initialization update the page with random question
         updateRandomQuestion();
     }
+
+    // -------------------------------------------------------------------------
+
+    // Clicking restart Button should restart the game by intializing
     $("#restart-btn").on("click", function (event) { 
         intialize();
+        $("#restart-btn").text("Restart Game");  
     });
 
+    // -------------------------------------------------------------------------
+
+    // Updating Random Question
     function updateRandomQuestion() {
 
+        // If Copied array has elements 
         if (availableDetails.length > 0) {
+
+            // call the reset timer to update the timer
             resettimer();
 
-            $("#question-col button").removeClass('disabled');
-            $("#question-col button").removeClass('bg-dark');
+            // Remove the clicked colored button class and enable the buttons  
+            $("#question-col button").removeAttr("disabled");
+            $("#question-col button").removeClass('bg-dark text-light');
 
+            // Select the random Element in the availableDetails Array
             var randonDetailsIndex = Math.floor(Math.random() * availableDetails.length);
             currentQuestion = availableDetails[randonDetailsIndex];
+
+            // Once we get the random element, remove that element from the array 
+            // so we will not ask the same question again to the user
             availableDetails.splice(randonDetailsIndex, 1);
 
+            // Update the questions, choices and guess Image columns 
+            questionNo++;
             $("#answer-col").hide();
+            $("#question-no").html(questionNo);
+            $("#remaining-no").html(availableDetails.length);
             $("#guess-img").attr("src", currentQuestion.picture);
             $("#question").html(currentQuestion.question);
             for (var i = 0; i < currentQuestion.choices.length; i++) {
@@ -155,57 +151,88 @@ $(document).ready(function () {
                 $("#option" + j).text(currentQuestion.choices[i]);
             }
         }
+
+        // If copied array has no elements then the trivia is over so show results 
         else
         {
+            
             $("#main-content").hide();
             $("#correct-answer").html(correctAnswer);
             $("#incorrect-answer").html(inCorrectAnswer);
             $("#unanswered").html(unAnswered);
             $("#result-row").show();
+            $("#result-row h5").show();
         }
     }
 
+    // -------------------------------------------------------------------------
+    
+    // Reset the timer for the Question page 
     function resettimer()
     {
         clearInterval(intervalId);
-        time = 30;
+        time = 60;
+        
         $("#time-left").html(time); 
+        
         intervalId = setInterval(function () {
-
+            // if time is not zero then countdown the time
             if (time > 0)  $("#time-left").html(--time); 
+            // if time goes to zero then display answer
             else  displayAnswer(""); 
         }, 1000);
     }
+
+    // -------------------------------------------------------------------------
+
+    // when we click on one of the choices 
+       $("#question-col button").on("click", function (event) {
+
+        var buttonId = "#" + event.target.id;
+
+        //Highlight the button but make it disabled so user cannot click on timeout
+        $(buttonId).addClass("bg-dark text-light");
+        $("#question-col button").attr('disabled','disabled');
+
+        //Send the clicked choice for displaying the answer
+        displayAnswer(event.target.textContent)
+    });
     
+    // -------------------------------------------------------------------------
+
+    //Display answer on screen
     function displayAnswer(ChoiceAnswer)
     {
-        $("#answer-gif").attr("src", currentQuestion.gif);
+        // if time is run out, update the message and add one to unanswered 
         if (time <= 0)
         {
             unAnswered++;
             $("#answer").html("You have run out of time <br> The correct Answer is " + currentQuestion.answer);
         }
+
+        // if choice is equal to correct answer then display success message and add one to correct answer  
         else if (ChoiceAnswer == currentQuestion.answer) {
             correctAnswer++;
             $("#answer").html("That's Correct");
         }
+
+        // if choice is wrong then display failure message and add one to incorrect answer
         else 
         {
             inCorrectAnswer++;
             $("#answer").html("Nope!!! <br> The correct Answer is " + currentQuestion.answer);
         }
-        $("#quotes").html(currentQuestion.quotes);
+    
+        // show answer Gif 
+        $("#answer-gif").attr("src", currentQuestion.gif);
         $("#answer-col").show();
+
+        // clear timer so it starts as fresh
         clearInterval(intervalId);
-        setTimeout(updateRandomQuestion, 3000);        
+
+        // Update next question after timeout
+        setTimeout(updateRandomQuestion, 4000);        
     }
-
-    $("#question-col button").on("click", function (event) {
-
-        var buttonId = "#" + event.target.id;
-        $(buttonId).addClass("bg-dark");
-        $("#question-col button").addClass('disabled ');
-        displayAnswer(event.target.textContent)
-    });
+    // -------------------------------------------------------------------------
  });
 
