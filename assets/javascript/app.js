@@ -120,7 +120,7 @@ $(document).ready(function () {
 
     // Updating Random Question
     function updateRandomQuestion() {
-
+        $("#answer-gif").attr("src", "");
         // If Copied array has elements 
         if (availableDetails.length > 0) {
 
