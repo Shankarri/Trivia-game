@@ -208,20 +208,20 @@ $(document).ready(function () {
         if (time <= 0)
         {
             unAnswered++;
-            $("#answer").html("You have run out of time <br> The correct Answer is " + currentQuestion.answer);
+            $("#answer").html("<span class='text-danger'>*** You have run out of time *** </span><br> The correct Answer is " + currentQuestion.answer);
         }
 
         // if choice is equal to correct answer then display success message and add one to correct answer  
         else if (ChoiceAnswer == currentQuestion.answer) {
             correctAnswer++;
-            $("#answer").html("That's Correct");
+            $("#answer").html("<span class='text-primary'>** That's Correct *** </span>");
         }
 
         // if choice is wrong then display failure message and add one to incorrect answer
         else 
         {
             inCorrectAnswer++;
-            $("#answer").html("Nope!!! <br> The correct Answer is " + currentQuestion.answer);
+            $("#answer").html("<span class='text-danger'>*** Nope!!! ***</span> <br> The correct Answer is " + currentQuestion.answer);
         }
     
         // show answer Gif 
